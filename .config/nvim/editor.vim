@@ -12,10 +12,6 @@ endif
 
 colorscheme nord
 
-" lightline configuration
-set laststatus=2
-let g:lightline = { 'colorscheme': 'nord' }
-
 " Enable the mouse. Also enable when in tmux.
 set mouse=a
 
