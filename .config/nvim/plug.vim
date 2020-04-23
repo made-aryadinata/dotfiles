@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Fuzzy file finder
 Plug 'itchyny/vim-gitbranch'                        " Show git branch in lightline
+Plug 'junegunn/gv.vim'                              " A git commit browser in Vim
 Plug 'preservim/nerdcommenter'                      " Shortcut to comment/uncomment code
 Plug 'preservim/nerdtree'                           " File tree
 Plug 'ryanoasis/vim-devicons'                       " Icons in NERDTree
