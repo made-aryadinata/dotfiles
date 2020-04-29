@@ -3,6 +3,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'               " Navigate between tmux and vim 
 Plug 'itchyny/vim-gitbranch'                        " Show git branch in lightline
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Fuzzy file finder
+Plug 'junegunn/goyo.vim'                            " Distraction-free writing in Vim
 Plug 'junegunn/gv.vim'                              " A git commit browser in Vim
 Plug 'mileszs/ack.vim'                              " Vim plugin for the Perl module / CLI script 'ack'
 Plug 'preservim/nerdcommenter'                      " Shortcut to comment/uncomment code
