@@ -3,6 +3,7 @@ source ~/.config/nvim/plug.vim
 if exists('g:vscode')
   source ~/.config/nvim/nerdcommenter.vim
 else
+  source ~/.config/nvim/ack.vim
   source ~/.config/nvim/js.vim
   source ~/.config/nvim/editor.vim
   source ~/.config/nvim/nerdtree.vim
