@@ -10,6 +10,8 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config checkout
 config config --local status.showUntrackedFiles no
 ```
+## Fish
+https://fishshell.com/
 
 ## NeoVim
 ### Dependencies
@@ -22,7 +24,7 @@ npm install -g neovim
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +'PlugInstall --sync' +qa
+nvim +'PlugInstall --sync' +qa
 ```
 
 ## Font
