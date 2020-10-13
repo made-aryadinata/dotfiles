@@ -5,4 +5,7 @@ alias nt="npm run test"
 alias ntc="npm run test:coverage"
 
 set NPMRC (base64 ~/.npmrc)
-eval (fnm env)
+
+if type -q fnm
+  eval (fnm env)
+end
