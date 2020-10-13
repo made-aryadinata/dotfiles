@@ -9,6 +9,7 @@ fisher add jethrokuan/z
 if not type -q fnm
   echo 'Installing fnm...'
   curl -fsSL https://fnm.vercel.app/install | bash
+  set -U fish_user_paths $HOME/.fnm $fish_user_paths
 end
 
 if not type -q starship
