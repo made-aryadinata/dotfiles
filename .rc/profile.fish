@@ -5,7 +5,7 @@ function fish_title
     end
 end
 
-starship init fish | source
+type -q starship && starship init fish | source
 
 function bwlogin
   if test -z $BW_SESSION
