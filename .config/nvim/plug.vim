@@ -14,6 +14,7 @@ Plug 'tpope/vim-sensible'                           " Sensible defaults
 Plug 'Xuyuanp/nerdtree-git-plugin'                  " Show modified files in NERDTree
 
 " language support
+Plug 'cespare/vim-toml'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'leafgarland/typescript-vim'
 Plug 'stephpy/vim-yaml'
