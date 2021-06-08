@@ -3,8 +3,8 @@ if not type -q fisher
   echo 'Installing fisher...'
   curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 end
-fisher add Gazorby/fish-abbreviation-tips
-fisher add jethrokuan/z
+fisher install Gazorby/fish-abbreviation-tips
+fisher install jethrokuan/z
 
 if not type -q fnm
   echo 'Installing fnm...'

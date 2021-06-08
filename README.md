@@ -5,7 +5,6 @@ Using bare git repository, with this [article](https://www.atlassian.com/git/tut
 
 ```bash
 cd
-echo ".cfg" >> .gitignore
 git clone --bare https://github.com/made-aryadinata/dotfiles.git $HOME/.cfg
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config checkout
