@@ -13,6 +13,11 @@ function bwlogin
   end
 end
 
+function bwrelogin
+  set -e BW_SESSION
+  bwlogin
+end
+
 function mkcd -a dir
   mkdir $dir
   cd $dir
@@ -21,7 +26,7 @@ end
 alias l="ls -lah"
 
 if test (uname -s) = "Darwin"
-  set JAVA_HOME (/usr/libexec/java_home)
+  set -gx JAVA_HOME (/usr/libexec/java_home)
 end
 
 function expand-dot-to-parent-directory-path -d 'expand ... to ../. and .... to ../.. and so on'
