@@ -147,3 +147,6 @@ alias glum 'git pull upstream master'
 
 alias gwch 'git whatchanged -p --abbrev-commit --pretty medium'
 alias gwip 'git add -A; git rm (git ls-files --deleted) 2> /dev/null; git commit -m "--wip--"'
+alias gpsup 'git push --set-upstream origin (git_current_branch)'
+
+alias config '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
