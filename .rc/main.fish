@@ -6,6 +6,7 @@ source $rc_dir/nodejs.fish
 source $rc_dir/profile.fish
 source $rc_dir/ssh.fish
 source $rc_dir/themes.fish
+source $rc_dir/nnn.fish
 
 if test -e $rc_dir/work/work.fish
   source $rc_dir/work/work.fish
