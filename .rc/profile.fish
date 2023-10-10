@@ -9,7 +9,7 @@ type -q starship && starship init fish | source
 
 function bwlogin
   if test -z $BW_SESSION
-    set -gx BW_SESSION (bw unlock --raw)
+    set -Ux BW_SESSION (bw unlock --raw)
   end
 end
 
