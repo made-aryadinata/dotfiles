@@ -19,7 +19,7 @@ function cssh -a name
   set port (jq -r --arg name $name ".$name.port" $ssh_json)
 
   echo using $key for $user@$ip:$port
-  ssh -p $port -i $key $user@$ip
+  ssh -o PubkeyAcceptedKeyTypes=+ssh-rsa -p $port -i $key $user@$ip
 end
 
 function cscp -a command name source destination

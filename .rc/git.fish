@@ -149,4 +149,8 @@ alias gwch 'git whatchanged -p --abbrev-commit --pretty medium'
 alias gwip 'git add -A; git rm (git ls-files --deleted) 2> /dev/null; git commit -m "--wip--"'
 alias gpsup 'git push --set-upstream origin (git_current_branch)'
 
+function gfco -a branch
+  git fetch origin $branch && git checkout $branch
+end
+
 alias config '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
