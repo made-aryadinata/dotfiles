@@ -15,7 +15,7 @@ https://fishshell.com/
 
 Run fish initialization script:
 ```bash
-.rc/init.fish
+.rc/init.sh
 ```
 
 ## NeoVim
