@@ -1,6 +1,8 @@
 if not type -q code
   function code
-    if test (uname -s) = "Darwin"
+    if command -q codium
+      codium $argv
+    else if test (uname -s) = "Darwin"
       /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code $argv
     else
       echo "Visual Studio Code not found"

@@ -7,6 +7,8 @@ end
 
 type -q starship && starship init fish | source
 
+alias bw="NODE_OPTIONS='--no-deprecation' command bw"
+
 function bwlogin
   if test -z $BW_SESSION
     set -Ux BW_SESSION (bw unlock --raw)
