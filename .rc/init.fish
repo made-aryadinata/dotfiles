@@ -5,6 +5,7 @@ if not type -q fisher
 end
 fisher install Gazorby/fish-abbreviation-tips
 fisher install jethrokuan/z
+fisher install PatrickF1/fzf.fish
 
 if not type -q fnm
   echo 'Installing fnm...'

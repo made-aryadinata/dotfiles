@@ -1,3 +1,12 @@
-function dnode -a filename nodeVersion
-  docker run -it --rm --name running-script -v "$PWD":/usr/src/app -w /usr/src/app node:$nodeVersion node $filename
+function dnode -a nodeVersion
+  set --erase argv[1]
+  docker run -it --rm \
+    --user 1000 \
+    --network host \
+    --name node-exec \
+    -v ~/.npmrc:/home/node/.npmrc \
+    -v ~/.npm:/home/node/.npm \
+    -v $PWD:$PWD \
+    -w $PWD \
+    node:$nodeVersion $argv
 end
