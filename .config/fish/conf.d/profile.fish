@@ -7,26 +7,6 @@ end
 
 type -q starship && starship init fish | source
 
-alias bw="NODE_OPTIONS='--no-deprecation' command bw"
-
-function bwlogin
-  if test -z $BW_SESSION
-    set -Ux BW_SESSION (bw unlock --raw)
-  end
-end
-
-function bwrelogin
-  set -e BW_SESSION
-  bwlogin
-end
-
-function mkcd -a dir
-  mkdir $dir
-  cd $dir
-end
-
-alias l="ls -lah"
-
 if test (uname -s) = "Darwin"
   set -gx JAVA_HOME (/usr/libexec/java_home)
 end

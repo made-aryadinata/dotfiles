@@ -19,16 +19,15 @@ if test -e ~/.npmrc
   end
 end
 
-alias nt="npm run test"
-alias ntc="npm run test:coverage"
-alias ntd="npm run test:debug"
-alias ni="npm install"
-alias nil="npm install --legacy-peer-deps"
-alias nilis="npm install --legacy-peer-deps --ignore-scripts"
-alias nci="npm ci"
-alias ncil="npm ci --legacy-peer-deps"
-
-
 if type -q fnm
   fnm env | source
 end
+
+abbr --add nt "npm run test"
+abbr --add ntc "npm run test:coverage"
+abbr --add ntd "npm run test:debug"
+abbr --add ni "npm install"
+abbr --add nil "npm install --legacy-peer-deps"
+abbr --add nilis "npm install --legacy-peer-deps --ignore-scripts"
+abbr --add nci "npm ci"
+abbr --add ncil "npm ci --legacy-peer-deps"

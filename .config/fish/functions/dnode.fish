@@ -1,4 +1,4 @@
-function dnode -a nodeVersion
+function dnode --argument nodeVersion
   set --erase argv[1]
   docker run -it --rm \
     --user 1000 \
