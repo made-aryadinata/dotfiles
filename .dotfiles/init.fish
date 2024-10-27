@@ -19,7 +19,9 @@ install_if_not_exists zoxide
 install_if_not_exists bitwarden-cli bw
 install_if_not_exists nnn
 install_if_not_exists fd
+install_if_not_exists macchina
 
+set --universal fish_greeting (macchina)
 fish_add_path $HOME/.fnm
 
 fisher install Gazorby/fish-abbreviation-tips
