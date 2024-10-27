@@ -9,11 +9,5 @@ git clone --bare git@github.com:made-aryadinata/dotfiles.git $HOME/.cfg
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config checkout
 config config --local status.showUntrackedFiles no
-```
-## Fish
-https://fishshell.com/
-
-Run fish initialization script:
-```bash
 .dotfiles/init.sh
 ```
