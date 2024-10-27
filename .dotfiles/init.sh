@@ -10,5 +10,9 @@ if ! command -v brew &> /dev/null; then
   fi
 fi
 
-brew install fish
-fish ~/.rc/init.fish
+if ! command -v fish &> /dev/null; then
+  echo 'Installing fish...'
+  brew install fish
+fi
+
+fish ~/.dotfiles/init.fish

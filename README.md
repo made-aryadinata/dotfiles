@@ -15,5 +15,5 @@ https://fishshell.com/
 
 Run fish initialization script:
 ```bash
-.init-dotfiles/init.sh
+.dotfiles/init.sh
 ```
