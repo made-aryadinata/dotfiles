@@ -11,3 +11,4 @@ type -q starship && starship init fish | source
 
 set -g fish_key_bindings my_key_bindings
 abbr -a !! --position anywhere --function last_history_item
+abbr -a eusq "expand_url --strip-query"
